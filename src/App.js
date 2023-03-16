@@ -2,7 +2,6 @@ import './App.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Header from './Components/Header/HeaderComponent';
 import MainDash from './Components/MainDash/MainDashComponent';
-import { useState, useEffect } from 'react';
 
 function App() {
   return (

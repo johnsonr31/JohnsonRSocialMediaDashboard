@@ -1,0 +1,15 @@
+.social-card{
+    background-color: hsl(227, 47%, 96%);
+    height: 16em;
+    width: 18em;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.social-card:hover{
+    background-color: hsl(229, 31%, 86%);
+    height: 16em;
+    width: 18em;
+    border-radius: 0.5em;
+    padding: 1em;
+}

@@ -1,0 +1,15 @@
+.card-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 1em auto 1em;
+}
+
+.overview-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin: auto 1em auto 1em;
+}

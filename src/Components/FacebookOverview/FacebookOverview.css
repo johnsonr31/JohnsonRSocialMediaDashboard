@@ -1,0 +1,29 @@
+.overview-card{
+    background-color: hsl(227, 47%, 96%);
+    height: 10em;
+    width: 18em;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin: 1em 1em 1em 1em;
+}
+
+.overview-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.percentage-number{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.views-and-percentage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

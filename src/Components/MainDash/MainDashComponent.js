@@ -28,7 +28,7 @@ function MainDash ()
                 <Header toggle={toggleDarkMode} />
                 <Row className='card-row'>
                     <Col>
-                        <FacebookCard />
+                        <FacebookCard toggle={toggleDarkMode} mode={colorMode}/>
                     </Col>
                     <Col>
                         <TwitterCard followers={1044} today={99} />

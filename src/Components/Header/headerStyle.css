@@ -25,7 +25,7 @@
     transition: .4s;
 }
 
-.slider:hover{
+/* .slider:hover{
     border-radius: 34px;
     position: absolute;
     cursor: pointer;
@@ -36,7 +36,7 @@
     background-image: linear-gradient(to right,hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     -webkit-transition: .4s;
     transition: .4s;
-}
+} */
 
 .slider:before {
     border-radius: 50%;
@@ -91,4 +91,15 @@ input:checked + .slider:before {
 
 .header{
     margin: auto 2em auto 2em;
+    background-color: hsl(225, 100%, 98%);
+}
+
+.light{
+    background-color: aliceblue;
+    color: black;
+}
+
+.dark{
+    background-color: hsl(230, 17%, 14%);
+    color: white;
 }

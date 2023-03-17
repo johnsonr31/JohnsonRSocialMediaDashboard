@@ -1,10 +1,8 @@
 import { Container, Row, Col} from 'react-bootstrap';
 import './TwitterCardStyle.css';
 
-function TwitterCard() 
+function TwitterCard({followers, today}) 
 {
-    let followerCount = 1044;
-    let todayFollowers = 99;
     let userHandle = '@nathanf';
     return (
         <div>
@@ -19,14 +17,14 @@ function TwitterCard()
                 </Row>
                 <Row>
                     <Col>
-                        <p className='followerCount'>{followerCount}</p>
+                        <p className='followerCount'>{followers}</p>
                         <p>FOLLOWERS</p>
                     </Col>
                 </Row>
                 <Row>
                     <Col className='followersToday'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4"><path fill="#1EB589" fill-rule="evenodd" d="M0 4l4-4 4 4z"/></svg>
-                        <p className='followerCount'>{todayFollowers} today</p>
+                        <p className='followerCount'>{today} today</p>
                     </Col>
                 </Row>
             </Container>

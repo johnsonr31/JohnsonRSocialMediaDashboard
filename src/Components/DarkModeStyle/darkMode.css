@@ -1,0 +1,41 @@
+.slider-dark{
+    border-radius: 34px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(230, 17%, 14%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider-dark:before {
+    border-radius: 50%;
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 30px;
+    bottom: 4px;
+    background-color: hsl(230, 22%, 74%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.social-card-dark{
+    background-color: hsl(228, 28%, 20%);
+    height: 16em;
+    width: 18em;
+    border-radius: 0.5em;
+    padding: 1em;
+}
+
+.social-card-dark:hover{
+    background-color: hsl(230, 28%, 16%);
+    height: 16em;
+    width: 18em;
+    border-radius: 0.5em;
+    padding: 1em;
+}

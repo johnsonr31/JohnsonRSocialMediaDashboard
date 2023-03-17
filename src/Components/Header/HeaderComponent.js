@@ -1,11 +1,24 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import './headerStyle.css';
+import '../DarkModeStyle/darkMode.css';
+import { useState, useEffect } from 'react';
 
-function Header() 
+function Header({toggle}) 
 {
+    const [colorMode, setColorMode] = useState('light');
+    const toggleDarkMode = () => {
+        if(colorMode === 'light'){
+            setColorMode('dark');
+        }else{
+            setColorMode('light');
+        }
+    }
+    useEffect(() => {
+        document.body.className = colorMode;
+    }, [colorMode]);
     let totalFollowers = 0;
     return(
-        <div>
+        <div className={colorMode ? 'light' : 'dark'}>
             <Container className='header'>
                 <Row className='title-and-switch'>
                     <Col>
@@ -18,7 +31,7 @@ function Header()
                             </Col>
                             <Col>
                                 <label className='dark-toggle'>
-                                <input type='checkbox'/>
+                                <input type='checkbox'onClick={toggle}/>
                                 <span className='slider'></span>
                             </label>
                             </Col>
